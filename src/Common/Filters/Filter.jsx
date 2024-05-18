@@ -23,9 +23,7 @@ export default function Filter({ setView }) {
                 </SubTitle>
             </TextContainer>
             <FilterContainer>
-                <SubTitle variant="h5">Per Page: </SubTitle>
-                <CustomInput type="text" />
-                <SubTitle variant="h5" sx={{ marginLeft: 2 }}>
+                <SubTitle variant="h5">
                     Sort By:{" "}
                 </SubTitle>{" "}
                 <CustomSelect
@@ -39,9 +37,9 @@ export default function Filter({ setView }) {
                     }}
                 >
                     <CustomMenuItem value="none" selected>
-                        <em>None</em>
+                       Best Match
                     </CustomMenuItem>
-                    <CustomMenuItem value={10}>Best Match</CustomMenuItem>
+                    <CustomMenuItem value={10} selected></CustomMenuItem>
                     <CustomMenuItem value={20}>Best Match</CustomMenuItem>
                     <CustomMenuItem value={30}>Best Match</CustomMenuItem>
                 </CustomSelect>
@@ -54,7 +52,6 @@ export default function Filter({ setView }) {
                 <IconButton onClick={() => setView(true)}>
                     <ViewListSharpIcon fontSize={"small"} />
                 </IconButton>
-                <CustomInput type="text" />
             </FilterContainer>
         </MainContainer>
     );
@@ -67,8 +64,8 @@ const MainContainer = styled(Container)(({ theme }) => ({
     justifyContent: "space-between",
     width: "100%",
     height: "100%",
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 50,
+    marginBottom: 50,
     [theme.breakpoints.down("md")]: {
         flexDirection: "column",
         alignItem: "center",
@@ -100,21 +97,12 @@ const FilterContainer = styled(Box)(({ theme }) => ({
         flexDirection: "column",
     },
 }));
-const CustomInput = styled("input")(({ theme }) => ({
-    marginLeft: 5,
-    width: "20%",
-    padding: 0,
-    height: 30,
-    borderColor: "#E7E6EF",
-    [theme.breakpoints.down("md")]: {
-        width: "100%",
-    },
-}));
 
 const CustomSelect = styled(Select)(({ theme }) => ({
-    width: 100,
-    height: 25,
+    width: '100%',
+    height: 35,
     padding: 2,
+    marginLeft:10,
     borderColor: "#E7E6EF",
     color: "#8A8FB9",
     fontSize: 12,
