@@ -54,7 +54,6 @@ const CustomeContainer = styled(Box)(({ theme }) => ({
     boxShadow: `0px 0px 25px 10px #F8F8FB`,
     display: "flex",
     padding: 30,
-    display: "flex",
     flexDirection: "column",
     [theme.breakpoints.down("md")]: {
       width: "100%",
