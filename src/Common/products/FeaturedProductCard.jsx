@@ -7,6 +7,7 @@ import ZoomInOutlinedIcon from "@mui/icons-material/ZoomInOutlined";
 import featured1 from "../../assets/img/featured-1.png";
 import Trails from "../../Components/Animations/Trails";
 import { colorObject } from "../../Theme/customColors";
+import { useNavigate } from "react-router-dom";
 export default function FeaturedProductCard({ title, price, imgUrl }) {
     const [showOptions, setShowOptions] = useState(false);
     const handleMouseEnter = () => {
@@ -15,7 +16,7 @@ export default function FeaturedProductCard({ title, price, imgUrl }) {
     const handleMouseLeave = () => {
         setShowOptions(false);
     };
-
+const navigate=useNavigate()
     return (
         <Product
             onMouseEnter={handleMouseEnter}
@@ -63,7 +64,7 @@ export default function FeaturedProductCard({ title, price, imgUrl }) {
                 </Trails>
             </ProductActionsWrapper>
 
-            <ProductViewDetails variant="contained" show={showOptions}>
+            <ProductViewDetails variant="contained" show={showOptions} onClick={()=>navigate('/detail/123')}>
                 View Details
             </ProductViewDetails>
 
