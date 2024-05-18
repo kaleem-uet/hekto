@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from '../Common/Footer/Footer'
-import Header from '../Common/Header/Header'
 import HeroSection from '../Components/HeroSection/HeroSection'
 import LeatestBlogs from '../Components/LeatestBlog/LeatestBlogs'
 import NewsLatter from '../Components/NewsLatter/NewsLatter'

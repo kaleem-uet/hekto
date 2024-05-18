@@ -26,7 +26,7 @@ function ProductDetail() {
         {!matches ? (
           <>
             <CustomContainer>
-              <Grid container spacing={2}>
+              <Grid container spacing={2} sx={{alignItems:'center'}}>
                 <CustomGrid item md={6} lg={6} sm={6}>
                   <ProductCarousel />
                 </CustomGrid>
@@ -96,7 +96,7 @@ const CustomGrid = styled(Grid)(({ theme }) => ({
 }));
 const CustomContainer = styled(Container)(({ theme }) => ({
   width: "100%",
-  height: 384,
+  height: 'auto',
   boxShadow: `0px 0px 25px 10px #F6F4FD`,
   borderRadius: 5,
   [theme.breakpoints.down("md")]: {

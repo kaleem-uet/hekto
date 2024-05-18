@@ -30,7 +30,7 @@ const Loading = () => {
         justifyContent: "center",
       }}
     >
-      <LoadingImg src={loading} />
+      <img src={loading} />
     </div>
   );
 };
@@ -44,7 +44,7 @@ function CustomRouts() {
         {
           path: "/",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <Home />
             </Suspense>
           ),
@@ -52,7 +52,7 @@ function CustomRouts() {
         {
           path: "/blog",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <BlogPage />
             </Suspense>
           ),
@@ -60,7 +60,7 @@ function CustomRouts() {
         {
           path: "/login",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <Login />
             </Suspense>
           ),
@@ -68,7 +68,7 @@ function CustomRouts() {
         {
           path: "/shop",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <GridView />
             </Suspense>
           ),
@@ -76,7 +76,7 @@ function CustomRouts() {
         {
           path: "/aboutus",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <AboutUs />
             </Suspense>
           ),
@@ -84,7 +84,7 @@ function CustomRouts() {
         {
           path: "/order",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <OrderComplete />
             </Suspense>
           ),
@@ -92,7 +92,7 @@ function CustomRouts() {
         {
           path: "/payment",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <Payment />
             </Suspense>
           ),
@@ -100,7 +100,7 @@ function CustomRouts() {
         {
           path: "/404error",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <NotFound />
             </Suspense>
           ),
@@ -108,7 +108,7 @@ function CustomRouts() {
         {
           path: "/contact",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <ContactUs />
             </Suspense>
           ),
@@ -116,7 +116,7 @@ function CustomRouts() {
         {
           path: "/faq",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <Faq />
             </Suspense>
           ),
@@ -124,7 +124,7 @@ function CustomRouts() {
         {
           path: "/readmore/:id",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <BlogReadMore />
             </Suspense>
           ),
@@ -132,7 +132,7 @@ function CustomRouts() {
         {
           path: "/detail/:id",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <ProductDetail />
             </Suspense>
           ),
@@ -140,7 +140,7 @@ function CustomRouts() {
         {
           path: "/cart",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <ShopingCart />
             </Suspense>
           ),
@@ -148,7 +148,7 @@ function CustomRouts() {
         {
           path: "/register",
           element: (
-            <Suspense fallback={Loading}>
+            <Suspense>
               <SignUp />
             </Suspense>
           ),
@@ -159,8 +159,5 @@ function CustomRouts() {
   return routes;
 }
 
-const LoadingImg = styled("img")(({ theme }) => {
-  width: 50;
-  height: 40;
-});
+
 export default CustomRouts;

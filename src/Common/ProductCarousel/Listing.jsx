@@ -38,7 +38,7 @@ function Listing() {
         </CustomeTypo>
     </div>
     <AddToCartContainer>
-        <CustomeTypo  variant='h5' color={colorObject.navyBlue} >
+        <CustomeTypo  variant='h5' color={colorObject.navyBlue}  sx={{cursor:'pointer'}}>
             Add To cart
         </CustomeTypo>
         <IconButton sx={{backgroundColor:"#FFF",boxShadow: `0px 8px 40px rgba(49, 32, 138, 0.05)`}}>

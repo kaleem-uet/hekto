@@ -49,7 +49,7 @@ export default function UniqueBanner() {
                         </ContantContiner>
                         <BtnContainer>
                             <CustomeBtn>
-                                <CustomTypo variant="h5">
+                                <CustomTypo variant="h5" sx={{cursor:'pointer'}}>
                                     Add To Cart
                                 </CustomTypo>
                             </CustomeBtn>
