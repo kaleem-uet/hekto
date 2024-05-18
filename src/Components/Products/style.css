@@ -1,0 +1,17 @@
+/* Change the color and size of the pagination dots */
+.swiper-pagination-bullet {
+    background-color: #092beb;
+    width: 10px;
+    height: 10px;
+  }
+
+  /* Change the color and size of the active pagination dot */
+  .swiper-pagination-bullet-active {
+    background-color: #092beb;
+    width: 10px;
+    height: 10px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    padding:10px
+  }
