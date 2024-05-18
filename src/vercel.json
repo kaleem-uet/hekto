@@ -1,74 +1,56 @@
 {
-    "redirects": [
+    "routes": [
       {
-        "source": "/",
-        "destination": "/",
-        "permanent": true
+        "src": "/blog",
+        "dest": "/"
       },
       {
-        "source": "/blog",
-        "destination": "/",
-        "permanent": false
+        "src": "/login",
+        "dest": "/"
       },
       {
-        "source": "/login",
-        "destination": "/",
-        "permanent": false
+        "src": "/shop",
+        "dest": "/"
       },
       {
-        "source": "/shop",
-        "destination": "/",
-        "permanent": false
+        "src": "/aboutus",
+        "dest": "/"
       },
       {
-        "source": "/aboutus",
-        "destination": "/",
-        "permanent": false
+        "src": "/order",
+        "dest": "/"
       },
       {
-        "source": "/order",
-        "destination": "/",
-        "permanent": false
+        "src": "/payment",
+        "dest": "/"
       },
       {
-        "source": "/payment",
-        "destination": "/",
-        "permanent": false
+        "src": "/404error",
+        "dest": "/"
       },
       {
-        "source": "/404error",
-        "destination": "/",
-        "permanent": false
+        "src": "/contact",
+        "dest": "/"
       },
       {
-        "source": "/contact",
-        "destination": "/",
-        "permanent": false
+        "src": "/faq",
+        "dest": "/"
       },
       {
-        "source": "/faq",
-        "destination": "/",
-        "permanent": false
+        "src": "/readmore/:id",
+        "dest": "/"
       },
       {
-        "source": "/readmore/:id",
-        "destination": "/",
-        "permanent": false
+        "src": "/detail/:id",
+        "dest": "/"
       },
       {
-        "source": "/detail/:id",
-        "destination": "/",
-        "permanent": false
+        "src": "/cart",
+        "dest": "/"
       },
       {
-        "source": "/cart",
-        "destination": "/",
-        "permanent": false
-      },
-      {
-        "source": "/register",
-        "destination": "/",
-        "permanent": false
+        "src": "/register",
+        "dest": "/"
       }
     ]
   }
