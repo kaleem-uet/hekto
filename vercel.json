@@ -1,0 +1,75 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/",
+        "permanent": true
+      },
+      {
+        "source": "/blog",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/login",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/shop",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/aboutus",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/order",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/payment",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/404error",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/contact",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/faq",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/readmore/:id",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/detail/:id",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/cart",
+        "destination": "/",
+        "permanent": false
+      },
+      {
+        "source": "/register",
+        "destination": "/",
+        "permanent": false
+      }
+    ]
+  }
+  
